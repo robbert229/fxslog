@@ -52,7 +52,7 @@ import (
 var _ fxevent.Logger = &SlogLogger{}
 
 type SlogLogger struct {
-	Logger slog.Logger
+	Logger *slog.Logger
 
 	ctx        context.Context
 	logLevel   slog.Level
